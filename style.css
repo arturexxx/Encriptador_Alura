@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin:0;
+    background-color: #F3F5FC;
+    font-weight: 400;
+    font-family: "Inter";
+    line-height: 110%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text_area{
+    border: none;
+    color: rgb(1, 1, 100);
+    margin-top: 90px;
+    text-transform: lowercase;
+    font-size: 32px;
+}
+::placeholder{ color: rgb(1, 1, 100);}
+.text_area:focus{
+    outline: none;
+}
+
+.mensaje{
+    background-color: #fdfdfd;
+    background-image: url('imgencript.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: none;
+    border-radius: 24px;
+    color: rgb(1, 1, 100);
+    margin-left: 90px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    font-size: 32px;
+}
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+
+.btn-encriptar{
+    background-color: rgb(1, 1, 100);
+    border: 1px solid rgb(1, 1, 100);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: 30px;
+    height: 67px;
+    width: 328px;
+    font-size: 32px;
+}
+
+.btn-desencriptar{
+    background-color: #D8DFE8;
+    border: 1px solid rgb(1, 1, 100);
+    border-radius: 24px;
+    color: rgb(1, 1, 100);
+    cursor: pointer;
+    margin-left: 30px;
+    height: 67px;
+    width: 328px;
+    font-size: 32px;
+}
+
+.btn-copiar{
+    border: 1px solid rgb(1, 1, 100);
+    border-radius: 24px;
+    color: rgb(1, 1, 100);
+    cursor: pointer;    
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 470px;
+    position: absolute;
+    width: 336px;
+    display: none;
+    font-size: 32px;
+}
+
+.informacion{
+    color: gray;
+    font-size: 10px;
+}
+
+.footer{
+    color:  rgb(1, 1, 100);
+    background-color:#D8DFE8;;
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
