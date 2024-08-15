@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const textAreain = document.querySelector('.text_area_in');
+    const textAreaout = document.querySelector('.text_area_out');
     const mensaje = document.querySelector('.text_area_out');
 
     const encriptarBtn = document.querySelector('.btn-encriptar');
