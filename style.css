@@ -276,6 +276,12 @@ main button{
     .contenedor_textos_no_encontrado img {
         display: none;
     }
+    .logo{  
+        justify-content: flex-start;
+    }
+    .logo img{
+        padding-left: 2em;
+    }
 
 }
 
