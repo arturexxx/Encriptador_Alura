@@ -32,12 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {
         mensaje_entrada.value="";
         copiarBtn.style.display = 'block';
         mensaje_salida.style.backgroundImage = 'none';
+        document.querySelector('.contenedor_textos_no_encontrado').style.display = 'none';
+        document.querySelector('.contenedor_encontrado').style.display = 'block'
     });
 
     desencriptarBtn.addEventListener('click', function() {
         const texto = mensaje_entrada.value;
         mensaje_salida.value = desencriptar(texto);
         mensaje_entrada.value="";
+        document.querySelector('.contenedor_textos_no_encontrado').style.display = 'none';
+        document.querySelector('.contenedor_encontrado').style.display = 'block';
     });
 
     copiarBtn.addEventListener('click', function() {
@@ -46,4 +50,5 @@ document.addEventListener('DOMContentLoaded', function() {
         mensaje_salida.value="";
         copiarBtn.style.display = 'none';
     });
+    
 });
