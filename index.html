@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de Texto</title>
+    <title>Encriptador de Texto Alura</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalizer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -15,26 +16,37 @@
         <img class="logo" src="Logo.png" alt="logo de proyecto">
     </header>
     <main>
-        <section>
-            <textarea class="text_area" cols="40" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <div>
-                <h5 class="informacion"><img src="exclamation.png">Solo letras minúsculas y sin acentos</h5>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+        <section class="contenedor_entrada-msj">
+            <div class="contenedor_textarea">
+                <textarea class="text_area_in" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="botones">
+                    <p><img class="informacion" src="exclamation.png" alt="alerta"> Solo letras minusculas y sin acentos </p>
+                    <div class="contenedor_only_botones">
+                        <button class="btn_encriptar"><b>Encriptar</b></button>
+                        <button class="btn_desencriptar"><b>Desencriptar</b></button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <textarea class="mensaje" cols="20" rows="15" placeholder="" readonly></textarea>
-            <div>
-                <button class="btn-copiar">copiar</button>
+        <section class="contenedor_salida_msj">
+            <div class="contenedor_resultado">
+                <div class="contenedor_textos_no_encontrado">
+                    <img src="imgencript.png" alt="Imagen">
+                    <h2>Ningun mensaje fue  encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="contenedor_encontrado">
+                    <div class="contenedor_mensaje">
+                        <textarea class="text_area_out" readonly></textarea>
+                    </div>
+                    <button class="btn_copiar">Copiar</button>
+                </div>
             </div>
-        </section>        
+        </section>
     </main>
     <script src="funciones.js"></script>
     <footer class="footer">
-        <p>Desarrollado por Arturo Guerrero</p>
+        <p>by Arturo Guerrero 2024 - <b>©copyright</b></p>
     </footer>
 </body>
 </html>
