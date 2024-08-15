@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const mensaje_entrada = document.querySelector('.text_area_in');
     const mensaje_salida = document.querySelector('.text_area_out');
 
-    const encriptarBtn = document.querySelector('.btn-encriptar');
-    const desencriptarBtn = document.querySelector('.btn-desencriptar');
-    const copiarBtn = document.querySelector('.btn-copiar');
+    const encriptarBtn = document.querySelector('.btn_encriptar');
+    const desencriptarBtn = document.querySelector('.btn_desencriptar');
+    const copiarBtn = document.querySelector('.btn_copiar');
 
     const encriptar = (texto) => {
         let encriptado = texto
@@ -44,5 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mensaje_salida.select();
         document.execCommand('copy');
         mensaje_salida.value="";
+        copiarBtn.style.display = 'none';
     });
 });
