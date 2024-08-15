@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const textArea = document.querySelector('.text_area');
-    const mensaje = document.querySelector('.mensaje');
+    const textAreain = document.querySelector('.text_area_in');
+    const mensaje = document.querySelector('.text_area_out');
 
     const encriptarBtn = document.querySelector('.btn-encriptar');
     const desencriptarBtn = document.querySelector('.btn-desencriptar');
@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     encriptarBtn.addEventListener('click', function() {
-        const texto = textArea.value;
+        const texto = textAreain.value;
         mensaje.value = encriptar(texto);
-        textArea.value="";
+        textAreain.value="";
         copiarBtn.style.display = 'block';
         mensaje.style.backgroundImage = 'none';
     });
